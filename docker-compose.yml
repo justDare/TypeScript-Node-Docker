@@ -14,4 +14,7 @@ services:
       - '4000'
     ports:
       - '4000:4000'
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - CI=true
     command: npm run dev
